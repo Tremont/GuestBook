@@ -9,7 +9,7 @@
 </head>
 <body>
 	<?php
-		$DBConnect = @mysql_connect("host", "user", "password");
+		$DBConnect = @mysql_connect("localhost", "root", "password");
 		if($DBConnect===FALSE)
 			echo "<p>Unable to connect to the database server. </p>"
 		. "<p>Error code " . mysql_errno()
